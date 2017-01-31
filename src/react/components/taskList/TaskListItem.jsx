@@ -1,38 +1,38 @@
 import React, {Component, PropTypes} from 'react'
 import classNames from 'classnames'
 import styles from './TaskListItem.css'
-import deleteIcon from '../../assets/deleteIcon.svg'
+import deleteIcon from '../../../assets/deleteIcon.svg'
 
 export default class TaskListItem extends Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
     complete: PropTypes.bool.isRequired,
-    archived: PropTypes.bool.isRequired,
+    removed: PropTypes.bool.isRequired,
     onChange: PropTypes.func,
     onComplete: PropTypes.func,
-    onArchive: PropTypes.func
+    onRemove: PropTypes.func
   }
 
   static defaultProps = {
     onChange: () => {},
     onComplete: () => {},
-    onArchive: () => {}
+    onRemove: () => {}
   }
 
   render () {
     const {
       name,
       complete,
-      archived,
+      removed,
       onChange,
       onComplete,
-      onArchive
+      onRemove
     } = this.props
 
     return (
       <div className={classNames(styles.wrapper, {
         [styles.itemComplete]: complete,
-        [styles.itemArchived]: archived
+        [styles.itemRemoved]: removed
       })}>
         <input
           className={styles.taskText}
@@ -49,7 +49,7 @@ export default class TaskListItem extends Component {
           className={styles.deleteIcon}
           src={deleteIcon}
           alt='delete task'
-          onClick={() => { onArchive(!archived) }} />
+          onClick={() => { onRemove() }} />
       </div>
     )
   }

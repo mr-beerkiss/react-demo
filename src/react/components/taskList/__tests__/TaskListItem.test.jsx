@@ -71,7 +71,7 @@ describe('<TaskListItem />', () => {
       <TaskListItem
         name='Task 1'
         complete={false}
-        archived={true}
+        archived
         onArchive={mockFn} />
     )
 

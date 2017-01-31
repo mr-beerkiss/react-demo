@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import React from 'react'
 import {shallow} from 'enzyme'
-import App from '../App.jsx'
+import {App} from '../App.jsx'
 
 describe('<App />', () => {
   it('snapshot: renders header and title', () => {

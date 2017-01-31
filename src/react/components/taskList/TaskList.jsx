@@ -7,12 +7,12 @@ export default class TaskList extends Component {
     data: PropTypes.arrayOf(PropTypes.shape({
       name: PropTypes.string.isRequired,
       complete: PropTypes.bool.isRequired,
-      archived: PropTypes.bool.isRequired
+      removed: PropTypes.bool.isRequired
     })),
     onTaskChange: PropTypes.func,
     onTaskComplete: PropTypes.func,
-    onTaskArchive: PropTypes.func,
-    onNewTask: PropTypes.func
+    onTaskRemove: PropTypes.func,
+    onAddTask: PropTypes.func
   }
 
   static defaultProps = {
@@ -24,8 +24,8 @@ export default class TaskList extends Component {
       data,
       onTaskChange,
       onTaskComplete,
-      onTaskArchive,
-      onNewTask
+      onTaskRemove,
+      onAddTask
     } = this.props
 
     return (
@@ -36,16 +36,16 @@ export default class TaskList extends Component {
               key={index}
               name={item.name}
               complete={item.complete}
-              archived={item.archived}
+              removed={item.removed}
               onChange={(value) => onTaskChange && onTaskChange(index, value)}
               onComplete={(complete) => onTaskComplete && onTaskComplete(index, complete)}
-              onArchive={(archive) => onTaskArchive && onTaskArchive(index, archive)} />
+              onRemove={() => onTaskRemove && onTaskRemove(index)} />
           ))}
         </div>
         <button
           className={styles.newTask}
-          onClick={() => onNewTask && onNewTask()}>
-          New Task
+          onClick={() => onAddTask && onAddTask()}>
+          Add Task
         </button>
       </div>
     )
