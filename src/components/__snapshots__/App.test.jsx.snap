@@ -1,11 +1,11 @@
 exports[`<App /> snapshot: render header and title 1`] = `
 <div
-  className="App">
+  className="app">
   <div
-    className="App__header">
+    className="header">
     <img
       alt="logo"
-      className="App__header__logo"
+      className="logo"
       src="logo.svg" />
     <h2>
       Welcome to Damon\'s Demo Task List
