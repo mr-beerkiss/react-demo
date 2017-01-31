@@ -1,9 +1,13 @@
 /* eslint-env jest */
 import React from 'react'
-import ReactDOM from 'react-dom'
+import renderer from 'react-test-renderer'
 import App from './App.jsx'
 
-it('successful render', () => {
-  const div = document.createElement('div')
-  ReactDOM.render(<App />, div)
+describe('<App />', () => {
+  it('snapshot: render header and title', () => {
+    const tree = renderer.create(
+      <App />
+    ).toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })

@@ -1,0 +1,15 @@
+exports[`<App /> snapshot: render header and title 1`] = `
+<div
+  className="App">
+  <div
+    className="App__header">
+    <img
+      alt="logo"
+      className="App__header__logo"
+      src="logo.svg" />
+    <h2>
+      Welcome to Damon\'s Demo Task List
+    </h2>
+  </div>
+</div>
+`;
