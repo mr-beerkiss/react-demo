@@ -8,8 +8,7 @@ import {
 export const initialState = {
   tasks: [{
     name: 'Task 1',
-    complete: false,
-    removed: false
+    complete: false
   }]
 }
 
@@ -26,8 +25,7 @@ export default function reducer (state = initialState, action) {
     case TASK_LIST_ADD:
       tasks = state.tasks.concat([{
         name: '',
-        complete: false,
-        removed: false
+        complete: false
       }]) // immutability
       return Object.assign({}, state, {tasks})
 
@@ -40,7 +38,8 @@ export default function reducer (state = initialState, action) {
       return Object.assign({}, state, {tasks})
 
     case TASK_LIST_ITEM_REMOVE:
-      tasks = updateTask(state, 'removed', action.index, true)
+      tasks = state.tasks.concat([]) // immutability
+      tasks.splice(action.index, 1)
       return Object.assign({}, state, {tasks})
 
     default:

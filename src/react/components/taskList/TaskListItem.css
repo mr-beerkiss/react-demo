@@ -24,7 +24,3 @@
 .itemComplete .taskText {
   text-decoration: line-through;
 }
-
-.itemRemoved {
-  display: none;
-}

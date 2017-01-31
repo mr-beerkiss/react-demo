@@ -6,8 +6,7 @@ export default class TaskList extends Component {
   static propTypes = {
     data: PropTypes.arrayOf(PropTypes.shape({
       name: PropTypes.string.isRequired,
-      complete: PropTypes.bool.isRequired,
-      removed: PropTypes.bool.isRequired
+      complete: PropTypes.bool.isRequired
     })),
     onTaskChange: PropTypes.func,
     onTaskComplete: PropTypes.func,
@@ -36,7 +35,6 @@ export default class TaskList extends Component {
               key={index}
               name={item.name}
               complete={item.complete}
-              removed={item.removed}
               onChange={(value) => onTaskChange && onTaskChange(index, value)}
               onComplete={(complete) => onTaskComplete && onTaskComplete(index, complete)}
               onRemove={() => onTaskRemove && onTaskRemove(index)} />

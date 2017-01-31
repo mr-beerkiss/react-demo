@@ -7,7 +7,6 @@ export default class TaskListItem extends Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
     complete: PropTypes.bool.isRequired,
-    removed: PropTypes.bool.isRequired,
     onChange: PropTypes.func,
     onComplete: PropTypes.func,
     onRemove: PropTypes.func
@@ -23,7 +22,6 @@ export default class TaskListItem extends Component {
     const {
       name,
       complete,
-      removed,
       onChange,
       onComplete,
       onRemove
@@ -31,25 +29,24 @@ export default class TaskListItem extends Component {
 
     return (
       <div className={classNames(styles.wrapper, {
-        [styles.itemComplete]: complete,
-        [styles.itemRemoved]: removed
+        [styles.itemComplete]: complete
       })}>
         <input
           className={styles.taskText}
           type='text'
           value={name}
           disabled={complete}
-          onChange={(e) => { onChange(e.target.value) }} />
+          onChange={(e) => onChange(e.target.value)} />
         <input
           className={styles.checkbox}
           type='checkbox'
-          onClick={() => { onComplete(!complete) }}
+          onClick={() => onComplete(!complete)}
           checked={complete} />
         <img
           className={styles.deleteIcon}
           src={deleteIcon}
           alt='delete task'
-          onClick={() => { onRemove() }} />
+          onClick={() => onRemove()} />
       </div>
     )
   }
