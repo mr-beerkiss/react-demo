@@ -12,18 +12,10 @@ exports[`<App /> snapshot: renders header and title 1`] = `
     </h2>
   </div>
   <TaskList
-    data={
-      Array [
-        Object {
-          "archived": false,
-          "complete": false,
-          "name": "Task 1",
-        },
-      ]
-    }
-    onNewTask={[Function]}
-    onTaskArchive={[Function]}
+    data={Array []}
+    onAddTask={[Function]}
     onTaskChange={[Function]}
-    onTaskComplete={[Function]} />
+    onTaskComplete={[Function]}
+    onTaskRemove={[Function]} />
 </div>
 `;

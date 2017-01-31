@@ -6,7 +6,7 @@ exports[`<TaskList /> snapshot: render header and title 1`] = `
   <button
     className="newTask"
     onClick={[Function]}>
-    New Task
+    Add Task
   </button>
 </div>
 `;

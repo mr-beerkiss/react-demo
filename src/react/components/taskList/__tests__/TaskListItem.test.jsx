@@ -10,7 +10,7 @@ describe('<TaskListItem />', () => {
       <TaskListItem
         name='Task 1'
         complete={false}
-        archived={false} />
+        removed={false} />
     )
     expect(wrapper).toMatchSnapshot()
   })
@@ -20,7 +20,7 @@ describe('<TaskListItem />', () => {
       <TaskListItem
         name='Task 1'
         complete
-        archived={false} />
+        removed={false} />
     )
     expect(wrapper).toMatchSnapshot()
   })
@@ -30,7 +30,7 @@ describe('<TaskListItem />', () => {
       <TaskListItem
         name='Task 1'
         complete
-        archived />
+        removed />
     )
     expect(wrapper).toMatchSnapshot()
   })
@@ -41,7 +41,7 @@ describe('<TaskListItem />', () => {
       <TaskListItem
         name='Task 1'
         complete={false}
-        archived={false}
+        removed={false}
         onChange={mockFn} />
     )
 
@@ -56,7 +56,7 @@ describe('<TaskListItem />', () => {
       <TaskListItem
         name='Task 1'
         complete={false}
-        archived={false}
+        removed={false}
         onComplete={mockFn} />
     )
 
@@ -65,18 +65,18 @@ describe('<TaskListItem />', () => {
     expect(mockFn.mock.calls[0]).toEqual([true])
   })
 
-  it('delete onClick returns deleted state', () => {
+  it('delete onClick triggers callback', () => {
     const mockFn = jest.fn()
     const wrapper = shallow(
       <TaskListItem
         name='Task 1'
         complete={false}
-        archived
-        onArchive={mockFn} />
+        removed
+        onRemove={mockFn} />
     )
 
     const input = wrapper.find(`.${styles.deleteIcon}`)
     input.simulate('click')
-    expect(mockFn.mock.calls[0]).toEqual([false])
+    expect(mockFn.mock.calls[0]).toEqual([])
   })
 })

@@ -22,7 +22,7 @@ exports[`<TaskListItem /> snapshot: renders complete task 1`] = `
 
 exports[`<TaskListItem /> snapshot: renders deleted task 1`] = `
 <div
-  className="wrapper itemComplete itemArchived">
+  className="wrapper itemComplete itemRemoved">
   <input
     className="taskText"
     disabled={true}

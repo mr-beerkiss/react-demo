@@ -15,7 +15,7 @@ describe('<TaskList />', () => {
   it('new task onClick handler triggers', () => {
     const mockFn = jest.fn()
     const wrapper = shallow(
-      <TaskList onNewTask={mockFn} />
+      <TaskList onAddTask={mockFn} />
     )
 
     const button = wrapper.find(`.${styles.newTask}`)
