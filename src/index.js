@@ -1,9 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './components/App.jsx'
+import {Provider} from 'react-redux'
+import store from './redux/store'
+import App from './react/App.jsx'
 import './global.css'
 
 ReactDOM.render(
-  <App />,
+  React.createElement(Provider, {store},
+    React.createElement(App)
+  ),
   document.getElementById('root')
 )
