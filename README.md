@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This is a demo that represents how I would build an application in React. I could provide examples of work from a previous role, but ignoring the fact it isn't really my code to share, it would not really represent how I would build a React application today.
+This is a demo that represents how I would build an application in React to help you assess my abilities and my suitability for your role. I could provide examples of work from a previous role, but ignoring the fact it isn't really my code to share, it would not really represent how I would build a React application today.
 
 With Facebook's release of [create-react-app](https://github.com/facebookincubator/create-react-app) I would now look to embrace this standardised, moderately opinionated approach as much as possible, rather than stick with the fragmented bespoke build processes or 3rd party boilerplates we previously had no choice to do.
 
