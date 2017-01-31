@@ -1,6 +1,6 @@
-### Damon's Amazing Task List React Demo
+## Damon's Amazing Task List React Demo
 
-#### Introduction
+### Introduction
 
 This is a demo that represents how I would build an application in React. I could provide examples of work from a previous role, but ignoring the fact it isn't really my code to share, it would not really represent how I would build a React application today.
 
@@ -12,7 +12,7 @@ Unfortunately, the default configuration of `create-react-app` doesn't turn on t
 
 Even though I've been forced to `create-react-app eject`, losing the huge advantage of simple React dependency updates and a simpler project structure, this is still for me, better than bespoke build processes and 3rd party boilerplates when setting up a project.
 
-Plus, Jest has come a long way and using [snapshot](https://facebook.github.io/jest/docs/snapshot-testing.html#content) testing with Enzyme, unit testing is fantastic.
+Plus, Jest has come a long way and using [snapshot](https://facebook.github.io/jest/docs/snapshot-testing.html#content) testing with Enzyme, testing is generally fantastic.
 
 This demo covers the following:
 * How I structure my `./src`
@@ -23,7 +23,7 @@ This demo covers the following:
 
 There are `README.md` files dotted around in folders with further details.
 
-#### Setup
+### Setup
 
 Exactly as you'd expect:
 * Clone the project
