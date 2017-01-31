@@ -1,0 +1,29 @@
+exports[`<App /> snapshot: renders header and title 1`] = `
+<div
+  className="app">
+  <div
+    className="header">
+    <img
+      alt="logo"
+      className="logo"
+      src="logo.svg" />
+    <h2>
+      Welcome to Damon\'s Demo Task List
+    </h2>
+  </div>
+  <TaskList
+    data={
+      Array [
+        Object {
+          "archived": false,
+          "complete": false,
+          "name": "Task 1",
+        },
+      ]
+    }
+    onNewTask={[Function]}
+    onTaskArchive={[Function]}
+    onTaskChange={[Function]}
+    onTaskComplete={[Function]} />
+</div>
+`;

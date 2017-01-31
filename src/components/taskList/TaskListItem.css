@@ -1,0 +1,30 @@
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.taskText {
+  font-size: inherit;
+  flex-grow: 1;
+}
+
+.deleteIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.checkbox {
+  cursor: pointer;
+}
+
+.itemComplete .taskText {
+  text-decoration: line-through;
+}
+
+.itemArchived {
+  display: none;
+}

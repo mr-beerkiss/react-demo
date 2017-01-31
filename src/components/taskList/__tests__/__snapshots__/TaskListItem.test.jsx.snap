@@ -1,0 +1,65 @@
+exports[`<TaskListItem /> snapshot: renders complete task 1`] = `
+<div
+  className="wrapper itemComplete">
+  <input
+    className="taskText"
+    disabled={true}
+    onChange={[Function]}
+    type="text"
+    value="Task 1" />
+  <input
+    checked={true}
+    className="checkbox"
+    onClick={[Function]}
+    type="checkbox" />
+  <img
+    alt="delete task"
+    className="deleteIcon"
+    onClick={[Function]}
+    src="deleteIcon.svg" />
+</div>
+`;
+
+exports[`<TaskListItem /> snapshot: renders deleted task 1`] = `
+<div
+  className="wrapper itemComplete itemArchived">
+  <input
+    className="taskText"
+    disabled={true}
+    onChange={[Function]}
+    type="text"
+    value="Task 1" />
+  <input
+    checked={true}
+    className="checkbox"
+    onClick={[Function]}
+    type="checkbox" />
+  <img
+    alt="delete task"
+    className="deleteIcon"
+    onClick={[Function]}
+    src="deleteIcon.svg" />
+</div>
+`;
+
+exports[`<TaskListItem /> snapshot: renders incomplete task 1`] = `
+<div
+  className="wrapper">
+  <input
+    className="taskText"
+    disabled={false}
+    onChange={[Function]}
+    type="text"
+    value="Task 1" />
+  <input
+    checked={false}
+    className="checkbox"
+    onClick={[Function]}
+    type="checkbox" />
+  <img
+    alt="delete task"
+    className="deleteIcon"
+    onClick={[Function]}
+    src="deleteIcon.svg" />
+</div>
+`;
