@@ -32,4 +32,4 @@ Unfortunately, the default configuration of `create-react-app` doesn't turn on t
 
 Even though I've been forced to `create-react-app eject`, losing the huge advantage of simple React dependency updates and a simpler project structure, this is still for me, better than bespoke build processes and 3rd party boilerplates when setting up a project.
 
-Plus, Jest has come a long way and using [snapshot](https://facebook.github.io/jest/docs/snapshot-testing.html#content) testing with Enzyme, testing is generally fantastic.
+Plus, Jest has come a long way and using [snapshot](https://facebook.github.io/jest/docs/snapshot-testing.html#content) testing with Enzyme, testing React applications has become a doddle.
