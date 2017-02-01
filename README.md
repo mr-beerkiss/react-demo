@@ -24,7 +24,7 @@ Exactly as you'd expect:
 
 ### A Note on This Build Process
 
-With Facebook's release of [create-react-app](https://github.com/facebookincubator/create-react-app) I would now look to embrace this standardised, moderately opinionated approach as much as possible when building React apps, rather than stick with the fragmented bespoke build processes or 3rd party boilerplates we previously had no choice to do in React land.
+I have a lot of experience with setting up a Webpack based build process but With Facebook's release of [create-react-app](https://github.com/facebookincubator/create-react-app) I would now look to embrace this standardised, moderately opinionated approach as much as possible when building using React, rather than stick with the fragmented bespoke build processes or 3rd party boilerplates we previously had no choice to do in React land.
 
 I've tried to move away from using a traditional CSS pre-processor such as SASS, a stylesheet file structure convention such as ITCSS and class naming convention such BEM and embrace `create-react-app`'s recommended usage of using CSS modules and essentially embedding CSS directly into React components via Webpack (a good article on this [here](https://www.triplet.fi/blog/practical-guide-to-react-and-css-modules/)).
 
