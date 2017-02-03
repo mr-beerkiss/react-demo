@@ -20,6 +20,6 @@ describe('<TaskList />', () => {
 
     const button = wrapper.find(`.${styles.newTask}`)
     button.simulate('click')
-    expect(mockFn.mock.calls[0]).toEqual([])
+    expect(mockFn.mock.calls.length).toBe(1)
   })
 })

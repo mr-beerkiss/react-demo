@@ -13,7 +13,7 @@ export const initialState = {
 }
 
 function updateTask (state, field, index, value) {
-  const newTasks = state.tasks.concat([]) // immutability
+  const newTasks = [].concat(state.tasks) // immutability
   newTasks[index][field] = value
   return newTasks
 }
