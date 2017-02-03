@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This is a demo that represents how I would build a front-end application in React and modern day Javascript to help you assess my abilities and my suitability for your role. I could provide examples of work from a previous role, but ignoring the fact it isn't really my code to share, they have been long term projects and would not necessarily represent how I would build an application today.
+This is a small demo that represents how I would build a front-end application in React and modern day Javascript to help you assess my abilities and my suitability for your role. I could provide examples of work from a previous role, but ignoring the fact it isn't really my code to share, they have been long term projects and would not necessarily represent how I would build an application today.
 
 This demo covers the following:
 * My competence with modern day Javascript (ES2015/16).
