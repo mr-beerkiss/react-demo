@@ -1,0 +1,4 @@
+react:
+  build:
+    image: react-demo
+    dockerfile_path: Dockerfile
